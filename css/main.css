@@ -1,26 +1,56 @@
+/* FONTS (Inter) */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-v12-latin-500.woff2") format("woff2"), url("../fonts/inter-v12-latin-500.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-v12-latin-600.woff2") format("woff2"), url("../fonts/inter-v12-latin-600.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
 /* BLOCKS */
 /* GLOBAL */
 :root {
   --primary-bg-color: #fff;
   --text-color: #000;
+  --main-font-family: "Arial", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
   height: 100%;
+  box-sizing: border-box;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
 }
 
-*::before,
+*, *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 *:focus {
@@ -30,14 +60,17 @@ html {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: var(--main-font-family);
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  color: var(--text-color);
+  background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
 }
@@ -94,4 +127,4 @@ body {
   overflow: hidden;
 }
 
-/* RETINA DISPLAY *//*# sourceMappingURL=main.css.map */
+/* RETINA BGS *//*# sourceMappingURL=main.css.map */
