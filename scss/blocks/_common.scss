@@ -1,10 +1,13 @@
-/* GLOBAL */
+/* CUSTOM PROPS */
 :root {
-  --primary-bg-color: #fff;
+  --body-bg: #f1f4ff;
+  --green: #4dc490;
+  --purple: #655af2;
+  --red: #f03535;
   --text-color: #000;
-  --main-font-family: "Arial", sans-serif;
 }
 
+/* GLOBAL */
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -18,7 +21,8 @@ html {
   text-decoration: none;
 }
 
-*, *::before,
+*,
+*::before,
 *::after {
   box-sizing: inherit;
 }
@@ -36,11 +40,11 @@ img {
 
 body {
   height: 100%;
-  font-family: var(--main-font-family);
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
-  background-color: var(--primary-bg-color);
+  background-color: var(--body-bg);
   display: flex;
   flex-direction: column;
 }
@@ -50,7 +54,7 @@ body {
   width: 100%;
   max-width: $desktop;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 /* MAIN CONTENT */
@@ -99,9 +103,8 @@ body {
 
 /* RETINA BGS */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-}
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {}
