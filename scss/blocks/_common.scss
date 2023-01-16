@@ -2,6 +2,7 @@
 :root {
   --body-bg: #f1f4ff;
   --green: #4dc490;
+  --grey: #555;
   --purple: #655af2;
   --red: #f03535;
   --text-color: #000;
@@ -18,7 +19,6 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-decoration: none;
 }
 
 *,
@@ -43,6 +43,7 @@ body {
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
   color: var(--text-color);
   background-color: var(--body-bg);
   display: flex;
@@ -59,6 +60,7 @@ body {
 
 /* MAIN CONTENT */
 .main-content {
+  padding: 80px 0;
   flex-grow: 1;
 }
 
@@ -100,11 +102,3 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* RETINA BGS */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {}

@@ -20,8 +20,8 @@
   <main class="main-content">
 
     <!-- INTRO PAGE -->
-    <section class="intro-page">
-      <div class="container">
+    <div class="container">
+      <section class="intro-page">
 
         <!-- HERO -->
         <section class="hero">
@@ -30,31 +30,37 @@
               frontend and backend
             </div>
             <h2 class="hero__title">
-              Learn to program by watching professionals
+              Learn to program by<br>watching<br>professionals
             </h2>
             <p class="hero__text">
-              See how experienced developers solve problems in real time
+              See how experienced developers solve<br>problems in real time
             </p>
           </div>
-          <div class="hero__bottom">Try it free 7 days, then $20/mo</div>
+          <div class="hero__bottom"><strong class="hero__bottom-bold">Try it free 7 days,</strong> then $20/mo</div>
         </section>
         <!-- /HERO -->
 
         <!-- SIGNUP FORM -->
         <form class="signup-form" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="signup-form__field" type="text" placeholder="Fist Name" name="name" aria-label="Fist Name"
-            required>
-          <input class="signup-form__field" type="text" placeholder="Last Name" name="surname" aria-label="Last Name"
-            required>
-          <input class="signup-form__field" type="email" placeholder="Email Address" name="email" aria-label="email"
-            required>
-          <input class="signup-form__field" type="password" placeholder="Password" name="password" aria-label="Password"
-            required>
+          <h2 class="signup-form__title">Sign up for the course and<br>get free 7 days</h2>
+          <div class="signup-form__group">
+            <input class="signup-form__field" type="text" placeholder="Fist Name" name="name" aria-label="Fist Name"
+              required>
+            <input class="signup-form__field" type="text" placeholder="Last Name" name="surname" aria-label="Last Name"
+              required>
+            <input class="signup-form__field" type="email" placeholder="Email Address" name="email" aria-label="email"
+              required>
+            <input class="signup-form__field" type="password" placeholder="Password" name="password"
+              aria-label="Password" required>
+          </div>
+          <button class="signup-form__button btn btn-primary" type="submit">Claim your free trial</button>
+          <p class="signup-form__notice">By clicking the button, you are agreeing to our <a
+              class="signup-form__notice-link" href="#">Terms and Services</a></p>
         </form>
         <!-- /SIGNUP FORM -->
-      </div>
 
-    </section>
+      </section>
+    </div>
     <!-- /INTRO PAGE -->
 
   </main>
